@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     file_name = f"data/{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}.json"
     
     s3.put_object(
-        Bucket="event-data-bucket-laxman",
+        Bucket="event-data-bucket-laxman-cf",
         Key=file_name,
         Body=json.dumps(data)
     )
