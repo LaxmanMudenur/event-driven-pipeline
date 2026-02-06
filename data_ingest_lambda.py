@@ -18,5 +18,5 @@ def lambda_handler(event, context):
     
     return {
         "statusCode": 200,
-        "body": "Event stored in S3!"
+        "body": "Hello from CICD!"
     }
